@@ -1,9 +1,16 @@
 * {
   box-sizing: border-box;
+  color: rgb(193, 193, 193) ;
 }
 
 html, body {
   min-height: 100%;
+}
+
+.dflex{
+        display: flex;
+        justify-content:center;
+        align-items:center;
 }
 
 html[lang="fa"] #docs,
@@ -32,17 +39,19 @@ body {
   display: flex;
   min-width: 600px;
   margin: 0;
-  background-color: #43A047;
-  color: rgba(255, 255, 255, 0.8);
+  background-color: rgb(29, 39, 54);
+  color: rgba(32, 32, 32, 0.8);
   font-family: 'PT Sans', sans-serif;
 }
-
+.text-red{
+        color: rgb(255, 0, 0);
+}
 #sidebar {
   width: 50%;
   min-width: 300px;
   position: relative;
   padding: 2em;
-  background-color: #43A047;
+  background-color: rgb(29, 39, 54);
   font-size: 15px;
 }
 
@@ -56,20 +65,23 @@ body {
 .title {
   margin: 0.5rem 0 0;
   text-transform: uppercase;
-  font-family: 'Fredoka One', cursive;
-  font-size: 28px;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 35px;
+  color: white;
 }
-
+.title img{
+        margin-bottom: 15px;
+}
 pre {
   margin: 0;
 }
 
 code {
   padding: 0 2px;
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(215, 215, 215, 0.852);
   font-family: 'Source Code Pro', monospace;
   font-weight: 900;
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(10, 10, 10, 0.8) ;
   white-space: nowrap;
 }
 
@@ -144,7 +156,9 @@ a:hover {
   text-decoration: none;
   color: rgba(255, 255, 255, 0.9);
 }
-
+#language option{
+        color: black !important;
+}
 .games a::before {
   content: "";
   position: absolute;
@@ -198,14 +212,14 @@ pre {
   font-family: 'Source Code Pro', monospace;
   font-size: 16px;
   line-height: 1.5;
-  color: #777;
+  color: #000000;
 }
 
 #css {
   height: 260px;
   position: relative;
   padding: 10px 10px 10px 40px;
-  background-color: #e0e0e0;
+  background-color: rgb(238, 238, 238);
   border-radius: 4px;
   overflow: hidden;
 }
@@ -217,7 +231,7 @@ pre {
   height: 100%;
   padding: 10px 6px;
   text-align: right;
-  background-color: #999;
+  background-color: #3f3f3f;
   color: #D5D5D5;
 }
 
@@ -232,6 +246,7 @@ pre {
   outline: none;
   resize: none;
   overflow: auto;
+  color: black;
 }
 
 #level-counter {
@@ -485,7 +500,7 @@ button:not(.disabled):hover {
 #background {
   z-index: 10;
   border-radius: 0 0 0 10px;
-  background-color: #1F5768;
+  background-color: #35454a;
 }
 
 #pond {
@@ -527,7 +542,9 @@ button:not(.disabled):hover {
   -ms-animation-delay: .6s;
   animation-delay: .6s;
 }
-
+.frog{
+        transform: scale(1.3);
+}
 .lilypad .bg,
 .frog .bg {
   width: 100%;
@@ -565,7 +582,7 @@ button:not(.disabled):hover {
 }
 
 .frog.green .bg {
-  background-image: url("../images/frog-green.svg");
+  background-image: url("../images/greenninja-removebg-preview.png");
 }
 
 .frog.green.cb-friendly .bg {
@@ -573,7 +590,7 @@ button:not(.disabled):hover {
 }
 
 .frog.red .bg {
-  background-image: url("../images/frog-red.svg");
+  background-image: url("../images/redninja-removebg-preview.png");
 }
 
 .frog.red.cb-friendly .bg {
@@ -581,7 +598,7 @@ button:not(.disabled):hover {
 }
 
 .frog.yellow .bg {
-  background-image: url("../images/frog-yellow.svg");
+  background-image: url("../images/yellow.png");
 }
 
 .frog.yellow.cb-friendly .bg {
